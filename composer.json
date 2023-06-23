@@ -1,6 +1,6 @@
 {
     "name": "amphibee/themosis-ignition",
-    "description": "A beautiful error page for Laravel applications.",
+    "description": "A beautiful error page for Themosis applications.",
     "keywords": [
         "error",
         "page",
@@ -8,6 +8,11 @@
         "flare"
     ],
     "authors": [
+        {
+            "name": "AmphiBee",
+            "email": "hello@amphibee.fr",
+            "role": "Developer"
+        },
         {
             "name": "Spatie",
             "email": "info@spatie.be",
