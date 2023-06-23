@@ -4,7 +4,7 @@ namespace Spatie\LaravelIgnition;
 
 use Exception;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use Illuminate\Foundation\Application;
+use Themosis\Core\Application;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\ViewException;
@@ -63,7 +63,9 @@ class IgnitionServiceProvider extends ServiceProvider
         $this->configureOctane();
         $this->registerViewExceptionMapper();
         $this->startRecorders();
-        $this->configureQueue();
+        
+        // Not implemented yet in Themosis
+        //$this->configureQueue();
     }
 
     protected function registerConfig(): void

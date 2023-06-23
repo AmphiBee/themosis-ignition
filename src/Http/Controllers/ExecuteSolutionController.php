@@ -2,7 +2,7 @@
 
 namespace Spatie\LaravelIgnition\Http\Controllers;
 
-use Illuminate\Foundation\Validation\ValidatesRequests;
+use Themosis\Core\Validation\ValidatesRequests;
 use Spatie\Ignition\Contracts\SolutionProviderRepository;
 use Spatie\LaravelIgnition\Exceptions\CannotExecuteSolutionForNonLocalIp;
 use Spatie\LaravelIgnition\Http\Requests\ExecuteSolutionRequest;

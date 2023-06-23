@@ -2,7 +2,7 @@
 
 namespace Spatie\LaravelIgnition\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
+use Themosis\Core\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
 class UpdateConfigRequest extends FormRequest

@@ -4,7 +4,7 @@ namespace Spatie\LaravelIgnition\Views;
 
 use Exception;
 use Illuminate\Contracts\View\Engine;
-use Illuminate\Foundation\Application;
+use Themosis\Core\Application;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\View\Engines\PhpEngine;
