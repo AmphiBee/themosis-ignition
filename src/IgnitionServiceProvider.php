@@ -63,9 +63,9 @@ class IgnitionServiceProvider extends ServiceProvider
         $this->configureOctane();
         $this->registerViewExceptionMapper();
         $this->startRecorders();
-        
+
         // Not implemented yet in Themosis
-        //$this->configureQueue();
+        $this->configureQueue();
     }
 
     protected function registerConfig(): void
@@ -250,7 +250,7 @@ class IgnitionServiceProvider extends ServiceProvider
             return;
         }
 
-        $queue = $this->app->get('queue');
+        $queue = $this->app->make('queue');
 
         // Reset before executing a queue job to make sure the job's log/query/dump recorders are empty.
         // When using a sync queue this also reports the queued reports from previous exceptions.
